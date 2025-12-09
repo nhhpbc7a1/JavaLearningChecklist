@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Java Learning Checklist - Game Mode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Calendar -->
+    <aside class="sidebar-calendar" id="sidebarCalendar">
+        <div class="sidebar-header">
+            <h3>📅 Lịch học</h3>
+            <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+        </div>
+        <div class="calendar-container" id="calendarContainer">
+            <!-- Calendar will be generated here -->
+        </div>
+    </aside>
+
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <h1 class="game-title">🎮 Java Learning Quest</h1>
+            <div class="level-info">
+                <div class="level-badge">
+                    <span class="level-label">Level</span>
+                    <span class="level-number" id="currentLevel">1</span>
+                </div>
+                <div class="xp-bar-container">
+                    <div class="xp-label">XP: <span id="currentXP">0</span> / <span id="maxXP">100</span></div>
+                    <div class="xp-bar">
+                        <div class="xp-fill" id="xpFill"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Panel -->
+        <div class="stats-panel">
+            <div class="stat-item">
+                <span class="stat-icon">✅</span>
+                <span class="stat-value" id="completedCount">0</span>
+                <span class="stat-label">Completed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">📝</span>
+                <span class="stat-value" id="totalCount">0</span>
+                <span class="stat-label">Total</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-icon">📊</span>
+                <span class="stat-value" id="progressPercent">0%</span>
+                <span class="stat-label">Progress</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-panel">
+            <button class="btn btn-primary" id="loadBtn">
+                <span class="btn-icon">📂</span>
+                Load CSV
+            </button>
+            <input type="file" id="fileInput" accept=".csv" style="display: none;">
+            <button class="btn btn-success" id="saveBtn">
+                <span class="btn-icon">💾</span>
+                Save CSV
+            </button>
+            <button class="btn btn-info" id="exportBtn">
+                <span class="btn-icon">📤</span>
+                Export CSV
+            </button>
+            <button class="btn btn-warning" id="resetBtn">
+                <span class="btn-icon">🔄</span>
+                Reset All
+            </button>
+        </div>
+
+        <!-- Achievement Badge (appears when milestone reached) -->
+        <div class="achievement-popup" id="achievementPopup">
+            <div class="achievement-content">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-title">Achievement Unlocked!</div>
+                <div class="achievement-message" id="achievementMessage"></div>
+            </div>
+        </div>
+
+        <!-- Checklist Container -->
+        <div class="checklist-container">
+            <div class="category-section" id="checklistContent">
+                <!-- Categories and items will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <p>🎯 Complete all tasks to level up!</p>
+        </footer>
+    </div>
+
+    <script src="detailed-checklist-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

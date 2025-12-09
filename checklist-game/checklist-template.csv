@@ -1,0 +1,11 @@
+Category,Session,Item,Description,XP,Completed
+"Week 1 - Day 1","Morning (4h)","Setup Java Development Environment","Install JDK 17+, IntelliJ IDEA, configure IDE",5,false
+"Week 1 - Day 1","Morning (4h)","Java Syntax Basics","Variables, data types, operators, control flow",10,false
+"Week 1 - Day 1","Morning (4h)","Practice: Write 5 simple Java programs","Hello World, calculator, loops, conditionals",10,false
+"Week 1 - Day 1","Evening (4h)","OOP Concepts - Classes & Objects","Create classes, objects, methods, constructors",15,false
+"Week 1 - Day 1","Evening (4h)","Practice: Build a simple class hierarchy","Animal class with Dog, Cat subclasses",15,false
+"Week 1 - Day 2","Morning (4h)","OOP - Inheritance & Polymorphism","extends, super, method overriding, @Override",15,false
+"Week 1 - Day 2","Morning (4h)","OOP - Encapsulation & Abstraction","private, protected, public, abstract classes",15,false
+"Week 1 - Day 2","Morning (4h)","Practice: Refactor Day 1 code with OOP","Apply inheritance and polymorphism",10,false
+"Week 1 - Day 2","Evening (4h)","Interfaces & Abstract Classes","interface keyword, implements, default methods",15,false
+"Week 1 - Day 2","Evening (4h)","Practice: LeetCode Easy problems (3 problems)","Solve using Java OOP concepts",15,false
