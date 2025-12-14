@@ -304,6 +304,7 @@ public class GlobalExceptionHandler {
 ```
 
 ### **2.4 Pagination & Sorting**
+Với các phần này thì best practice là dùng Page<T> của Spring Boot hỗ trợ sẵn
 ```java
 @GetMapping
 public ResponseEntity<PageResponse<User>> getUsers(
@@ -328,6 +329,8 @@ public ResponseEntity<PageResponse<User>> getUsers(
 ## 🎯 **Exercise 3: Refactor Day 6 API** (1h)
 
 **Mục tiêu:** Áp dụng best practices vào code Day 6
+
+**Ghi chú:** Phân biệt annotation @ModelAttribute và @RequestBody
 
 **Yêu cầu:**
 
